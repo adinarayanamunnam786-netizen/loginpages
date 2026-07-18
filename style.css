@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.gallery-section {
+    width: 720px;
+    height: 600px;
+    background: #f5e3c7;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Background faded icons */
+
+.gallery-section i {
+    position: absolute;
+    color: #e5cfab;
+    opacity: .45;
+}
+
+.chef {
+    font-size: 70px;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pizza-left {
+    font-size: 70px;
+    left: 130px;
+    top: 270px;
+}
+
+.pizza-right {
+    font-size: 70px;
+    right: 110px;
+    top: 270px;
+}
+
+.pizza-bottom {
+    font-size: 80px;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Gallery */
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.diamond {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    transform: rotate(45deg);
+    overflow: hidden;
+    border-radius: 10px;
+    border: 6px solid #d8b06a;
+    background: #fff;
+}
+
+.diamond img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    transform: rotate(-45deg) scale(1.1);
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+
+/* Positions */
+
+.top-left {
+    top: 70px;
+    left: 130px;
+}
+
+.top-right {
+    top: 70px;
+    right: 130px;
+}
+
+.center {
+    width: 180px;
+    height: 180px;
+    top: 170px;
+    left: 270px;
+}
+
+.center img {
+    width: 260px;
+    height: 260px;
+    top: -40px;
+    left: -40px;
+}
+
+.bottom-left {
+    bottom: 60px;
+    left: 130px;
+}
+
+.bottom-right {
+    bottom: 60px;
+    right: 130px;
+}
+
+
+/* Responsive */
+
+@media(max-width:768px) {
+    .gallery-section {
+        width: 95%;
+        height: auto;
+        padding: 50px 0 300px;
+    }
+    .diamond {
+        position: relative;
+        margin: 20px auto;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+    }
+    .center {
+        width: 160px;
+        height: 160px;
+    }
+}
